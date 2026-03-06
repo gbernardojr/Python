@@ -1,3 +1,5 @@
+* Plano de Curso *
+
 **Nome do curso:**  
 “Desenvolva APIs Modernas com Python + FastAPI + SQLite”
 
