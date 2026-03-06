@@ -1,4 +1,5 @@
-Aqui está a **versão revisada** do plano de curso, ajustada conforme sua solicitação:
+**Nome do curso:**  
+“Desenvolva APIs Modernas com Python + FastAPI + SQLite”
 
 - **Banco de dados (SQLite)** entra **a partir da segunda aula** (já na prática).  
 - **Primeira aula** foca em conceitos teóricos + FastAPI básico:  
@@ -9,11 +10,8 @@ Aqui está a **versão revisada** do plano de curso, ajustada conforme sua solic
   - Visão geral do que vamos construir (projeto final)  
 - A partir da **aula 2** já criamos conexão com SQLite + primeiros modelos e CRUD simples.
 
-**Nome sugerido do curso (mantido):**  
-“Desenvolva APIs Modernas com Python + FastAPI + SQLite + Frontend em 20 dias”
-
 **Duração total:** 20 segundas-feiras × ~2 horas cada  
-**Público-alvo:** Pessoas com Python básico (listas, dicionários, funções, classes, pip).  
+**Público-alvo:** Pessoas interessadas em aprender desenvolvimento de software com Python.  
 **Tecnologias principais:**  
 - Python 3.11+  
 - FastAPI  
@@ -51,23 +49,4 @@ Aqui está a **versão revisada** do plano de curso, ajustada conforme sua solic
 | 19     | 19   | Frontend – Parte 2: Login + token + CRUD autenticado    | Implementar login, guardar token, interceptor/axios + CRUD protegido      | Integração completa                |
 | 20     | 20   | Apresentação dos projetos + Q&A + próximos passos       | Cada aluno apresenta (3–5 min) + feedback + dicas de portfólio            | Fechamento e motivação             |
 
-### Principais mudanças em relação à versão anterior
 
-- Aula 1 → 100% conceitual + demo rápida de FastAPI puro (sem banco)  
-- Aula 2 → Já entra SQLite + SQLAlchemy + create_all() + primeira query  
-- Todo o curso usa **apenas SQLite** (sem migração para PostgreSQL dentro das 20 aulas, para manter simples e focado)  
-- Autenticação e frontend mantidos nas últimas semanas (para dar tempo de solidificar o backend)  
-- Testes e organização de código aparecem um pouco antes (a partir da metade), para incentivar boas práticas desde cedo
-
-### Dicas práticas para você (instrutor)
-
-- Na aula 1: use slides/diagramas simples para explicar REST, HTTP verbs, JSON, status codes e "o que é um banco relacional vs NoSQL". Mostre print de um arquivo .db aberto no DB Browser for SQLite.  
-- Na aula 2: ensine `create_engine("sqlite:///./app.db")`, `Base.metadata.create_all()`, `SessionLocal`, e `Depends(get_db)`.  
-- Use `connect_args={"check_same_thread": False}` no engine do SQLite para evitar erros comuns em FastAPI.  
-- Ofereça duas opções de frontend na aula 18:  
-  - HTMX + Tailwind (mais rápido, templates no backend)  
-  - React + Vite + axios (mais mercado, SPA)  
-- Crie um repositório GitHub com branches por aula (ex: aula-02-sqlite, aula-09-jwt…) para os alunos acompanharem.
-
-Se quiser trocar o projeto (ex: blog, despesas, livros), adicionar FastAPI Users, incluir Alembic mesmo com SQLite, ou ajustar o ritmo do frontend, me avise que refaço mais uma vez.  
-Vai ficar um curso bem sólido e prático assim! Boa sorte nas aulas. 🚀
